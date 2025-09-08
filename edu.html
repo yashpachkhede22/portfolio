@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Extra Curricular</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    /* Section Styling */
+    .extra-section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-header img {
+      width: 80px;
+      height: auto;
+    }
+
+    /* Grid Layout */
+    .extra-section .content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    /* Card Styling */
+    .extra-section .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .extra-section .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .extra-section .exp-img img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    /* Heading Styling */
+    .extra-section h3 {
+      font-size: 1.1rem;
+      margin: 0 0 8px 0;
+      min-height: 48px; /* ensures all headings occupy equal height */
+    }
+
+    /* Year Styling */
+    .extra-section .exp-time {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #777;
+      margin: 0 0 12px 0;
+      min-height: 20px; /* ensures years align parallel */
+    }
+
+    /* Description Styling */
+    .extra-section p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 1024px) {
+      .extra-section .content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .extra-section .content {
+        grid-template-columns: 1fr;
+      }
+
+      .extra-section .card {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- EXTRA CURRICULAR -->
+  <section id="extra" class="extra-section">
+    <!-- Heading + Image -->
+    <div class="section-header">
+      <h2>Extra Curricular</h2>
+      <img src="chibi-extra.png" alt="Extra Curricular">
+    </div>
+
+    <!-- Cards -->
+    <div class="content">
+      <div class="card">
+        <div class="exp-img">
+          <img src="band.png" alt="Lead Vocalist">
+        </div>
+        <h3>Lead Vocalist – Diatribe (IBS Hyderabad Rock Band)</h3>
+        <p class="exp-time">2025 – Present</p>
+        <p>Perform at college events and inter-college competitions as the lead vocalist. 
+            Showcase creativity, stage presence, and collaboration through musical performances. 
+            Contribute to team coordination, set planning, and audience engagement. </p>
+      </div>
+
+      <div class="card">
+        <div class="exp-img">
+          <img src="festive.png" alt="Cultural Event">
+        </div>
+        <h3>Senior Executer – Samavesh Club</h3>
+        <p class="exp-time">2024 – Present</p>
+        <p>Contributed to musical performances during cultural events and college functions. 
+            Collaborated with team members to plan and execute engaging stage acts. 
+            Fostered creativity and coordination through active participation in club initiatives. </p>
+      </div>
+
+      <div class="card">
+        <div class="exp-img">
+          <img src="org.png" alt="PR Head">
+        </div>
+        <h3>PR Head – Riyaz: The Music Club</h3>
+        <p class="exp-time">2021 – 2023</p>
+        <p>Led public relations and content strategy for the club’s official social media presence. 
+          Created and managed engaging content to boost online visibility and student engagement. 
+          Collaborated with club members to promote events, performances, and initiatives</p>
+      </div>
+
+      <div class="card">
+        <div class="exp-img">
+          <img src="shield.png" alt="House Captain">
+        </div>
+        <h3>House Captain</h3>
+        <p class="exp-time">2019 – 2020</p>
+        <p>Led and managed a team of students, organizing inter-house events and activities.
+          Coordinated cultural and sports competitions, ensuring smooth execution of events.
+          Successfully motivated and guided the house to win the Best House Award during tenure.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
